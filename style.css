@@ -1,0 +1,114 @@
+body {
+    display: inline;
+    flex-direction: column;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+/* header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-links {
+    margin-left: auto;
+}
+
+/* headline */
+
+.tagline {
+    display: flex;
+    justify-content: center;
+}
+
+.tagline img {
+    width: 300px;
+}
+
+.pitch
+
+.tagline img {
+    height: auto;
+    width: 200px;
+}
+
+.pump-selection {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pump-selection h2 {
+    font-size: 30px;
+}
+
+.tiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.pump-tile {
+    display: inline;
+    flex-direction: column;
+    flex: 0 1 200px;
+}
+
+.pump-tile img {
+    width: 200px;
+    height: auto;
+    display: inline;
+}
+
+.testimonial {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+}
+
+.testimonial p {
+    flex: auto;
+    width: 700px;
+}
+
+.testimonial h3 {
+    flex: 1;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.call-to-action div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.call-to-action h3 {
+    display: flex;
+    flex: 1;
+}
+
+.call-to-action p {
+    flex: 1;
+}
+
+.call-to-action button {
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
