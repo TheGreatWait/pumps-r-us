@@ -1,9 +1,7 @@
-* {
-    outline: red solid .5px;
-}
-
 body {
     width: 100%;
+    margin: 0px;
+    font-family: roboto;
 }
 
 a {
@@ -14,6 +12,14 @@ a {
 h1, h2, h3 {
     padding: 0;
     margin: 0;
+}
+
+button {
+    
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: #F9FaF8;
+
 }
 /* header */
 
@@ -27,7 +33,7 @@ h1, h2, h3 {
 }
 
 .logo {
-    flex: 0 0 900px;
+    flex: 0 1 800px;
 }
 
 .logo-links {
@@ -35,44 +41,54 @@ h1, h2, h3 {
     align-self: flex-end;
 }
 
+.logo-links a {
+    margin: 16px;
+}
+
 /* headline */
 
 .tagline {
     background-color: #1F2937;
-    color: white;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 10px;
-}
-
-.tagline img {
-    width: 300px;
+    padding: 100px;
+    color: #F9FaF8;
 }
 
 .pitch {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-items: start;
-    flex: 0 1 20%;
+    justify-content: space-between;
     padding: 0;
-    margin: 20px;
-    gap: 10px;
+    margin-right: 40px;
+    gap: 8px;
+    width: 400px;
+    font-size: 18px;
 }
 
 .hero {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 36px;
+    font-weight: 1000;
+
 }
 
 .pitch > button {
-
+    height: 40px;
+    border: none;
 }
 
 .tagline img {
-    height: auto;
-    width: 200px;
+    height: 200px;
+    width: auto;
     flex: 0 0;
+    border: 1px solid #3882F6;
+}
+
+
+.tagline img {
+    width: 300px;
 }
 
 /* tiles */
@@ -82,28 +98,40 @@ h1, h2, h3 {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
 
 .pump-selection h2 {
-    font-size: 18px;
+    font-size: 36px;
     padding: 10px;
+    font-weight: 1000;
+    color: #1F2937;
 }
 
 .tiles {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    align-items: start;
+    align-items: baseline;
 }
 
 .pump-tile {
     flex: 0 1;
     margin: 20px;
+    display: flex;
+    flex-flow: column;
 }
 
 .pump-tile img {
     width: 150px;
     height: auto;
+    border: 2px solid #3882F6;;
+    border-radius: 5px;
+}
+
+.pump-tile p {
+    text-align: center;
+
 }
 
 /* Testimonial Section */
@@ -115,18 +143,22 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .testimonial p {
     display: inline;
     flex: auto;
     font-style: italic;
-    max-width: 900px;
+    max-width: 700px;
+    font-size: 24px;
+    color: #1F2937;
 }
 
 .testimonial h3 {
     display: inline;
-    align-self: last-baseline;
+    margin-left: 500px;
 }
 
 /* Call to Action */
@@ -135,15 +167,24 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding: 30px 50px;
+    margin: 100px auto;
+    background-color: #3882F6;
+    color:#E5E7EB;
+    border-radius: 10px;
+    max-width: 900px;
+    flex: auto;
 }
 
 .call-to-action div {
     display: flex;
-    flex-flow: column;
+    flex-flow: wrap column;
+    flex: 0 1 500px;
+    margin-right: 50px;
+
 }
 
 .call-to-action h3 {
-    display: flex;
     padding: 0;
     margin: 0;
 }
@@ -154,7 +195,9 @@ h1, h2, h3 {
 }
 
 .call-to-action button {
-
+    border: white 1px solid;
+    border-radius: 5px;
+    font-weight: 700;
 }
 
 .footer {
@@ -163,4 +206,6 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
+    padding: 20px;
 }
