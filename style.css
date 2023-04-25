@@ -1,7 +1,7 @@
 body {
     width: 100%;
     margin: 0px;
-    font-family: roboto;
+    font-family: sans-serif;
 }
 
 a {
@@ -27,18 +27,22 @@ button {
     background-color: #1F2937;
     color: white;
     display: flex;
+    flex: 1 1 850px;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
 .logo {
-    flex: 0 1 800px;
+    flex: 0 1 550px;
+    font-size: 20px;
+    font-weight: 1000;
 }
 
 .logo-links {
     flex: 0 0 auto;
     align-self: flex-end;
+    font-weight: 700;
 }
 
 .logo-links a {
@@ -62,14 +66,14 @@ button {
     align-items: start;
     justify-content: space-between;
     padding: 0;
-    margin-right: 40px;
+    flex: 0 1 600px;
+    margin-right: 130px;
     gap: 8px;
-    width: 400px;
     font-size: 18px;
 }
 
 .hero {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 1000;
 
 }
@@ -123,7 +127,7 @@ button {
 }
 
 .pump-tile img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border: 2px solid #3882F6;;
     border-radius: 5px;
@@ -131,6 +135,8 @@ button {
 
 .pump-tile p {
     text-align: center;
+    font-size: 16px;
+    color: rgb(73, 73, 73)
 
 }
 
@@ -151,14 +157,16 @@ button {
     display: inline;
     flex: auto;
     font-style: italic;
-    max-width: 700px;
-    font-size: 24px;
+    font-weight: 300;
+    max-width: 900px;
+    font-size: 32px;
     color: #1F2937;
 }
 
 .testimonial h3 {
     display: inline;
-    margin-left: 500px;
+    margin-left: 450px;
+    font-size: 24px;
 }
 
 /* Call to Action */
@@ -187,17 +195,20 @@ button {
 .call-to-action h3 {
     padding: 0;
     margin: 0;
+    font-size: 24px;
 }
 
 .call-to-action p {
     padding: 0;
     margin: 0;
+    font-size: 18px;
 }
 
 .call-to-action button {
     border: white 1px solid;
     border-radius: 5px;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .footer {
@@ -206,6 +217,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 16px;
     padding: 20px;
 }
