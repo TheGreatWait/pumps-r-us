@@ -1,3 +1,7 @@
+* {
+    outline: red solid .5px;
+}
+
 body {
     width: 100%;
 }
@@ -39,6 +43,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding: 10px;
 }
 
 .tagline img {
@@ -67,6 +72,7 @@ h1, h2, h3 {
 .tagline img {
     height: auto;
     width: 200px;
+    flex: 0 0;
 }
 
 /* tiles */
@@ -79,26 +85,25 @@ h1, h2, h3 {
 }
 
 .pump-selection h2 {
-    font-size: 30px;
+    font-size: 18px;
+    padding: 10px;
 }
 
 .tiles {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: center;
     align-items: start;
 }
 
 .pump-tile {
-    display: inline;
-    flex-direction: column;
-    flex: 0 1 200px;
+    flex: 0 1;
+    margin: 20px;
 }
 
 .pump-tile img {
-    width: 200px;
+    width: 150px;
     height: auto;
-    display: inline;
 }
 
 /* Testimonial Section */
@@ -108,16 +113,23 @@ h1, h2, h3 {
     display: flex;
     flex-flow: wrap column;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .testimonial p {
+    display: inline;
     flex: auto;
-    width: 700px;
+    font-style: italic;
+    max-width: 900px;
 }
 
 .testimonial h3 {
-    flex: 1;
+    display: inline;
+    align-self: last-baseline;
 }
+
+/* Call to Action */
 
 .call-to-action {
     display: flex;
@@ -127,15 +139,18 @@ h1, h2, h3 {
 
 .call-to-action div {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
 }
 
 .call-to-action h3 {
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .call-to-action p {
-
+    padding: 0;
+    margin: 0;
 }
 
 .call-to-action button {
